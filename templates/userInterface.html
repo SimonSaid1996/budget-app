@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>your category and purchases lists</title>
+		<script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
+	</head>
+	<body>
+		<table id="theTable">
+		</table>
+		<h3> Add new categories: </h3>
+		<form name="theForm">
+			<label >name of the category:</label>
+			<input type="text" id="newCat" name="" value="" />
+			<label >price of the category:</label>
+			<input type="number" id="newPrice" name="" value="" />
+			<input type="button" id="theButton" value="Add" />
+			
+		</form>
+		</br></br>
+		
+		<h2> Add new purchase: </h2>
+		<form name="thePurchase">		{#need to add some method here saying dealing with the cats and dealing with the purchases #}
+			<label >name of the category:</label>
+			<input type="text" id="newC" name="" value="" />
+			<label >name of the purchase:</label>
+			<input type="text" id="newP" name="" value="" />
+			<label >price of the purchase:</label>
+			<input type="number" id="newPrice1" name="" value="" />
+		<a> purchaseTime </a>
+		
+		  <select id="event_year">
+			<option value="2018" selected>2018</option>
+			<option value="2019" selected>2019</option>
+		  </select>
+		  <select id="event_month">
+			<option value="1" selected>Jan</option>
+			<option value="2">Feb</option>
+			<option value="3">Mar</option>
+			<option value="4">Apri</option>
+			<option value="5">May</option>
+			<option value="6">Jun</option>
+			<option value="7">Jul</option>
+			<option value="8">Aug</option>
+			<option value="9">Sep</option>
+			<option value="10">Oct</option>
+			<option value="11">Nov</option>
+			<option value="12" >Dec</option>
+		  </select>
+		  <select id="event_date">
+			<option value="1" selected>01</option>
+			<option value="2">02</option>
+			<option value="3">03</option>
+			<option value="4">04</option>
+			<option value="5">05</option>
+			<option value="6">06</option>
+			<option value="7">07</option>
+			<option value="8">08</option>
+			<option value="9">09</option>
+			<option value="10">10</option>
+			<option value="11">11</option>
+			<option value="12" >12</option>
+			<option value="13" >13</option>
+			<option value="14" >14</option>
+			<option value="15" >15</option>
+			<option value="16" >16</option>
+			<option value="17" >17</option>
+			<option value="18" >18</option>
+			<option value="19" >19</option>
+			<option value="20" >20</option>
+			<option value="21" >21</option>
+			<option value="22" >22</option>
+			<option value="23" >23</option>
+			<option value="24" >24</option>
+			<option value="25" >25</option>
+			<option value="26" >26</option>
+			<option value="27" >27</option>
+			<option value="28" >28</option>
+			<option value="29" >29</option>
+			<option value="30" >30</option>
+			<option value="31" >31</option>
+		  </select>	
+			
+			<input type="button" id="theButton1" value="Add" />
+		</form>
+		
+		<p id="summary"></p>
+	</body>
+</html>
